@@ -1,0 +1,109 @@
+.hero {
+    background-image: url('/assest/Images/contactback.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .hero h1 {
+    padding: 150px 0px 0px 100px;
+    font-size: 50px;
+    color: white;
+    margin: auto;
+  }
+.hero p {
+    color: #ffff;
+    padding-left: 100px;
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    color: rgb(189, 182, 250);
+}
+.details {
+    width: 30%;
+    margin: 50px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-contact {
+    width: 100%;
+    height: 40px;
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.btn-contact a i {
+    font-size: larger;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.map {
+    /* margin-top: 100px; */
+    margin-left: 100px;
+    width: 100%;
+}
+.map-details{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-details form{
+    width: 35%;
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+    .hero h1{
+      font-size: 55px;
+    }
+    .map-details{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .map iframe{
+        width: 100%;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .map , #form{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 481px) and (max-width:900px) {
+    .map-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .map-details .contact , .map{
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+    }
+    #form{
+        width: 90%;
+    }
+}
+
+
+
